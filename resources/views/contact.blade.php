@@ -23,7 +23,7 @@
                         </h3>
                       </div>
                       <div class="bg-white shadow overflow-hidden sm:rounded-md">
-                        <div class="py-2 h-screen bg-gray-300 px-2">
+                        <div class="py-2 bg-gray-300 px-2">
                             <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden md:max-w-lg">
                                 <div class="md:flex">
                                    

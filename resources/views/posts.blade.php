@@ -34,9 +34,7 @@
                       <a href="/exportpdf" type="button" class="inline-flex items-center m-4 px-4 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         Posts as PDF
                       </a> 
-                      <form>
-                      <input style="width: 100%;border: 2px solid blue" placeholder="Search post..." type="text" class="typeahead">
-                    </form>
+                      
                       <div class="bg-white shadow overflow-hidden sm:rounded-md">
                         <ul class="divide-y divide-gray-200">
                             @forelse ($posts as $post)
@@ -93,5 +91,6 @@
             </div>
         </div>
     </div>
+    
 </x-app-layout>
 

@@ -71,6 +71,24 @@ Route::get('/students', [StudentController::class, 'students'])
 Route::get('/electronics', [ElectronicsController::class, 'index'])
 ->middleware(['auth'])->name('electronics');
 
+Route::get('/getelectronics', [ElectronicsController::class, 'getelectronics'])
+->middleware(['auth'])->name('getelectronics');
+
+Route::get('/electronic/{id}', [ElectronicsController::class, 'editelectronic'])
+->middleware(['auth'])->name('editelectronic');
+
+Route::delete('/delelectronic/{id}', [ElectronicsController::class, 'delelectronic'])
+->middleware(['auth'])->name('delelectronic');
+
+Route::delete('/delelectronics', [ElectronicsController::class, 'delelectronics'])
+->middleware(['auth'])->name('delelectronics');
+
+Route::put('/updateelectronic', [ElectronicsController::class, 'updateelectronic'])
+->middleware(['auth'])->name('updateelectronic');
+
+Route::post('/addelectronic', [ElectronicsController::class, 'addelectronic'])
+->middleware(['auth'])->name('addelectronic');
+
 Route::get('/editstudent/{student}', [StudentController::class, 'editstudent'])
 ->middleware(['auth']);
 
